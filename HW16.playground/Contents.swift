@@ -1,5 +1,4 @@
 import Foundation
-import SwiftUI
 
 enum SpaceType: String {
     case empty = "⬜"
@@ -173,7 +172,7 @@ let player = Player(x: 0, y: 0, room: room, box: box)
 room.show()
 
 let moveArray:[Direction]
-moveArray = [.right, .down, .down, .down, .down, .left, .down, .right, .right]
+moveArray = [.right, .down, .down, .down, .down, .left, .down, .right, .right, .right]
 for direction in moveArray {
     player.move(direction: direction)
     
